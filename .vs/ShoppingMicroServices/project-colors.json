@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c6c14415-772d-40b9-bfbd-ce7f04b7071a": {
+      "ProjectGuid": "c6c14415-772d-40b9-bfbd-ce7f04b7071a",
+      "DisplayName": "Shopping.Client",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
