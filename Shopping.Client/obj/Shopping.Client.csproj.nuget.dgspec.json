@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Temp\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj": {}
+    "C:\\Temp\\learn-microservices\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj": {}
   },
   "projects": {
-    "C:\\Temp\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj": {
+    "C:\\Temp\\learn-microservices\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Temp\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj",
+        "projectUniqueName": "C:\\Temp\\learn-microservices\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj",
         "projectName": "Shopping.Client",
-        "projectPath": "C:\\Temp\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj",
+        "projectPath": "C:\\Temp\\learn-microservices\\ShoppingMicroServices\\Shopping.Client\\Shopping.Client.csproj",
         "packagesPath": "C:\\Users\\rohit\\.nuget\\packages\\",
-        "outputPath": "C:\\Temp\\ShoppingMicroServices\\Shopping.Client\\obj\\",
+        "outputPath": "C:\\Temp\\learn-microservices\\ShoppingMicroServices\\Shopping.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rohit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.14.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

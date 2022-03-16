@@ -5,7 +5,17 @@
       "ProjectGuid": "c6c14415-772d-40b9-bfbd-ce7f04b7071a",
       "DisplayName": "Shopping.Client",
       "ColorIndex": 0
+    },
+    "822198b0-fe33-42c0-af56-9950bcb87bcf": {
+      "ProjectGuid": "822198b0-fe33-42c0-af56-9950bcb87bcf",
+      "DisplayName": "Shopping.API",
+      "ColorIndex": 1
+    },
+    "11d01d0c-e5e6-46b5-bf29-b6f5fbba3e6a": {
+      "ProjectGuid": "11d01d0c-e5e6-46b5-bf29-b6f5fbba3e6a",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }
