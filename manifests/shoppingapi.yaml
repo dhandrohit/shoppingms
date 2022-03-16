@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shoppingapi-deployment 
+  labels:
+    app: shoppingapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shoppingapi
+  template:
+    metadata:
+      labels: 
+        app: shoppingapi
+    spec:
+      containers:
+        - name: shoppingapi
+          image: rkvshoppingacr.azurecr.io/shoppingapi:v1
+          ports: 
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+            - name: DatabaseSettings__ConnectionString
+              valueFrom: 
+                configMapKeyRef:
+                  name: mongo-configmap #name coming from mongo-configmap
+                  key: connection_string
+              #value: mongodb://username:password@mongodb-service:27017
+              #mongodb-service is the name of the service that we defined in the mongo.manifest yml  
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+      imagePullSecrets:
+          - name: acr-secret
+         
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: shoppingapi-service
+spec:
+  selector:
+    app: shoppingapi
+  ports:
+    - port: 80
