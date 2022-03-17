@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Shopping.API
 {
-    //Adding comment
+    
     public class Startup
     {
         public Startup(IConfiguration configuration)
