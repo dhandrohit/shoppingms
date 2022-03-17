@@ -13,8 +13,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Temp\ShoppingMicroServices\Shopping.API:/app
-      - C:\Temp\ShoppingMicroServices:/src
+      - C:\Temp\learn-microservices\ShoppingMicroServices\Shopping.API:/app
+      - C:\Temp\learn-microservices\ShoppingMicroServices:/src
       - C:\Users\rohit\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\rohit\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
@@ -40,8 +40,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Temp\ShoppingMicroServices\Shopping.Client:/app
-      - C:\Temp\ShoppingMicroServices:/src
+      - C:\Temp\learn-microservices\ShoppingMicroServices\Shopping.Client:/app
+      - C:\Temp\learn-microservices\ShoppingMicroServices:/src
       - C:\Users\rohit\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\rohit\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
